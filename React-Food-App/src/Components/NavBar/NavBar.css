@@ -42,7 +42,6 @@
 }
 .navbar .navbar-menu li{
     cursor: pointer;
-    transition: all 0.4s ease-in-out;
 }
 .navbar button:active{
     transform: rotate(180deg);
