@@ -39,3 +39,29 @@
     color: tomato;
     margin: 10px 0px;
 }
+.food-item-container{
+    position: relative;
+}
+.food-item-container .add{
+    position: absolute;
+    width: 35px;
+    bottom: 13px;
+    right: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.item-count{
+    position: absolute;
+    bottom: 13px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    padding: 6px;
+    border-radius: 50px;
+}
+.item-count img{
+    width: 25px;
+    cursor: pointer;
+}
