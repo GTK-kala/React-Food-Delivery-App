@@ -7,3 +7,35 @@
     transition: 0.3s;
     animation: fadeIn 0.8s ease-in-out;
 }
+.food-item-img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    height: 200px;
+    object-fit: cover;
+}
+.food-item-info{
+    padding: 20px;
+}
+.food-item-name-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.food-item-name-rating p{
+   font-size: 20px;
+    font-weight: 500;
+}
+.food-item-name-rating img{
+   width: 80px;
+}
+.food-item-description{
+    font-size: 14px;
+    color: #676767;
+}
+.food-item-price{
+    font-size: 22px;
+    font-weight: 500;
+    color: tomato;
+    margin: 10px 0px;
+}
