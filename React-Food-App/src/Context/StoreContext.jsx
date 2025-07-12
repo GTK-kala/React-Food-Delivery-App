@@ -12,7 +12,7 @@ const StoreContextProvider = (props) => {
        setCartItems((prev) =>({...prev,[itemId]:1}));
       }
       else{
-        setCartItems(prev =>({...prev,[itemId]:prev[itemId] + 1}));
+        setCartItems((prev) =>({...prev,[itemId]:prev[itemId] + 1}));
       }
      }
 
