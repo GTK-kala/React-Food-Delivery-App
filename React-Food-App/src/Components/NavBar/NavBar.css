@@ -44,7 +44,7 @@
     cursor: pointer;
 }
 .navbar button:active{
-    transform: rotate(180deg);
+    transform: scale(1.5);
     background: tomato;
     color: white;
 }

@@ -3,7 +3,7 @@ import './NavBar.css'
 import { useState } from 'react' 
 import { Link } from 'react-router-dom'
 
-const NavBar = () => {
+const NavBar = ({setShowLogin}) => {
   const [click, setClick] = useState('Home');
 
   return (
@@ -21,7 +21,7 @@ const NavBar = () => {
          <Link to="/cart"><img src={assets.basket_icon} /></Link>
            <div className="dot"></div>
           </div>
-          <button>Sign in</button>
+          <button onClick={() => setShowLogin(true)}>Sign in</button>
         </div>
     </div>
   )
