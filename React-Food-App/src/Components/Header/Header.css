@@ -37,4 +37,22 @@
     transition: background-color 0.3s ease;
     position: relative;
 }
+@media (max-width:1050px) {
+    .header-contents{
+        max-width: 45%;
+    }
+}
+@media (max-width:750px) {
+    .header-contents{
+        max-width: 65%;
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        width: 80px;
+        height: 35px;
+        font-size: 11px;
+    }
+}
 

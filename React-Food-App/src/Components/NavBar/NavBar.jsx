@@ -10,10 +10,10 @@ const NavBar = () => {
     <div className='navbar'>
        <Link to="/"><img src={assets.logo} className='logo' /></Link>
         <ul className="navbar-menu" >
-          <li className={click === "Home" ? 'active' : ''} onClick={() =>setClick('Home')}><Link to="/">Home</Link></li>
-          <li className={click === "Menu" ? 'active' : ''} onClick={() =>setClick('Menu')}><Link to="/menu">Menu</Link></li>
-          <li className={click === "Mobile-App" ? 'active' : ''} onClick={() =>setClick('Mobile-App')}><Link to="/mobile-app">Mobile-App</Link></li>
-          <li className={click === "Contact" ? 'active' : ''} onClick={() =>setClick('Contact')}><Link to="/contact">Contact</Link></li>
+          <Link to={'/'} className={click === "Home" ? 'active' : ''} onClick={() =>setClick('Home')}>Home</Link>
+          <a href='#menu' className={click === "Menu" ? 'active' : ''} onClick={() =>setClick('Menu')}>Menu</a>
+          <a href='#app-download' className={click === "Mobile-App" ? 'active' : ''} onClick={() =>setClick('Mobile-App')}>Mobile-App</a>
+          <a href='#footer' className={click === "Contact" ? 'active' : ''} onClick={() =>setClick('Contact')}>Contact</a>
         </ul>
         <div className="navbar-right">
           <img src={assets.search_icon} />
