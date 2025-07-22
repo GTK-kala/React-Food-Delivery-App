@@ -5,7 +5,7 @@ import { StoreContext } from "../../Context/StoreContext";
 
 const Cart = () => {
 
-  const { cartItems, food_list , RemoveFromCart , getTotalCartAmount} = useContext(StoreContext);
+  const { cartItems , food_list , RemoveFromCart , getTotalCartAmount} = useContext(StoreContext);
   const navigate = useNavigate();
 
   return (
@@ -21,17 +21,17 @@ const Cart = () => {
         </div>
         <br />
         <hr />
-        {food_list.map((item, i) => {
+        { food_list.map((item, i) => {
           if (cartItems[item._id > 0]) {
             return (
               <div>
-                <div className="cart-items-title cart-items-item">
+                <div className="cart-items-title cart-items-item" key={i}>
                   <img src={item.image} alt="" />
                   <p>{item.name}</p>
                   <p>$ {item.price}</p>
                   <p>{cartItems[item._id]}</p>
                   <p>$ {item.price * cartItems[item._id]}</p>
-                  <p className="cross" onClick={() =>RemoveFromCart(item._id)}>x</p>
+                  <p className="cross" onClick={() => RemoveFromCart(item._id)}>x</p>
                 </div>
                 <hr />
               </div>
